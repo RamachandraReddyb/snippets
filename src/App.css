@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
+*/
+
+.main {
+  width: 98vw;
+  /* min-height: 100vh; */
+  position: relative;
+  /* display: flex; */
+  /* justify-content: center; */
+  padding: 10px 24px 10px 24px;
+  /* pointer-events: none; */
+}
+
+table tr td {
+  border: 1px solid;
+}
