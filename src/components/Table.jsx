@@ -1,113 +1,270 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { v4 as uuid } from "uuid";
 
 const data = {
   centre: [
     {
-      id: 1,
+      id: uuid(),
       name: "centre 1",
       totalCurriculums: 2,
       totalCombos: 4,
       totalIntakes: 12,
       curriculums: [
         {
-          id: "1-1",
+          id: uuid(),
           name: "curriculum 1",
           totalCombos: 2,
           totalIntakes: 6,
           combos: [
             {
-              id: "1-1-1",
+              id: uuid(),
               name: "combo1",
               totalIntakes: 3,
               intakes: [
                 {
-                  id: "1-1-1-1",
+                  id: uuid(),
                   name: "intake 1",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-1-2",
+                  id: uuid(),
                   name: "intake 2",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-1-3",
+                  id: uuid(),
                   name: "intake 3",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
               ],
             },
             {
-              id: "1-1-2",
+              id: uuid(),
               name: "combo2",
               totalIntakes: 3,
               intakes: [
                 {
-                  id: "1-1-2-1",
+                  id: uuid(),
                   name: "intake 1",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-2-2",
+                  id: uuid(),
                   name: "intake 2",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-2-3",
+                  id: uuid(),
                   name: "intake 3",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
               ],
             },
           ],
         },
         {
-          id: "1-1",
+          id: uuid(),
           name: "curriculum 2",
           totalCombos: 2,
           totalIntakes: 6,
           combos: [
             {
-              id: "1-1-1",
+              id: uuid(),
               name: "combo1",
               totalIntakes: 3,
               intakes: [
                 {
-                  id: "1-1-1-1",
+                  id: uuid(),
                   name: "intake 1",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-1-2",
+                  id: uuid(),
                   name: "intake 2",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-1-3",
+                  id: uuid(),
                   name: "intake 3",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
               ],
             },
             {
-              id: "1-1-2",
+              id: uuid(),
               name: "combo2",
               totalIntakes: 3,
               intakes: [
                 {
-                  id: "1-1-2-1",
+                  id: uuid(),
                   name: "intake 1",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-2-2",
+                  id: uuid(),
                   name: "intake 2",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-2-3",
+                  id: uuid(),
                   name: "intake 3",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
               ],
             },
@@ -116,116 +273,246 @@ const data = {
       ],
     },
     {
-      id: 2,
+      id: uuid(),
       name: "centre 2",
       totalCurriculums: 3,
       totalCombos: 5,
       totalIntakes: 13,
       curriculums: [
         {
-          id: "1-1",
+          id: uuid(),
           name: "curriculum 1",
           totalCombos: 2,
           totalIntakes: 3,
           combos: [
             {
-              id: "1-1-1",
+              id: uuid(),
               name: "combo1",
               totalIntakes: 1,
               intakes: [
                 {
-                  id: "1-1-1-1",
+                  id: uuid(),
                   name: "intake 1",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
               ],
             },
             {
-              id: "1-1-2",
+              id: uuid(),
               name: "combo2",
               totalIntakes: 3,
               intakes: [
                 {
-                  id: "1-1-2-1",
+                  id: uuid(),
                   name: "intake 1",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-2-2",
+                  id: uuid(),
                   name: "intake 2",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
               ],
             },
           ],
         },
         {
-          id: "1-1",
+          id: uuid(),
           name: "curriculum 2",
           totalCombos: 2,
           totalIntakes: 6,
           combos: [
             {
-              id: "1-1-1",
+              id: uuid(),
               name: "combo1",
               totalIntakes: 3,
               intakes: [
                 {
-                  id: "1-1-1-1",
+                  id: uuid(),
                   name: "intake 1",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-1-2",
+                  id: uuid(),
                   name: "intake 2",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-1-3",
+                  id: uuid(),
                   name: "intake 3",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
               ],
             },
             {
-              id: "1-1-2",
+              id: uuid(),
               name: "combo2",
               totalIntakes: 3,
               intakes: [
                 {
-                  id: "1-1-2-1",
+                  id: uuid(),
                   name: "intake 1",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-2-2",
+                  id: uuid(),
                   name: "intake 2",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
                 {
-                  id: "1-1-2-3",
+                  id: uuid(),
                   name: "intake 3",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
               ],
             },
           ],
         },
         {
-          id: "1-3",
+          id: uuid(),
           name: "curriculum 3",
           totalCombos: 2,
           totalIntakes: 3,
           combos: [
             {
-              id: "1-1-1",
+              id: uuid(),
               name: "combo1",
               totalIntakes: 1,
               intakes: [
                 {
-                  id: "1-1-1-1",
+                  id: uuid(),
                   name: "intake 1",
-                  data: ["cell 1", "cell 2", "cell 3"],
+                  data: [
+                    {
+                      id: uuid(),
+                      name: "cell 1",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 2",
+                    },
+                    {
+                      id: uuid(),
+                      name: "cell 3",
+                    },
+                  ],
                 },
               ],
             },
@@ -240,7 +527,7 @@ const Table = () => {
   return (
     <>
       {/* dynamic data */}
-      <table class="w-full table-auto border" cellPadding="2">
+      <table className="w-full table-auto border" cellPadding="2" key={1}>
         <thead>
           <tr className="border text-left">
             <th>centre</th>
@@ -255,8 +542,8 @@ const Table = () => {
         <tbody>
           {data.centre.map((centre, aIndex) => {
             return (
-              <>
-                <tr>
+              <React.Fragment key={centre.id}>
+                <tr index={"centre-" + centre.id} key={"centre-" + centre.id}>
                   <td
                     rowSpan={
                       centre.totalCurriculums +
@@ -270,8 +557,8 @@ const Table = () => {
                 </tr>
                 {centre.curriculums.map((curriculum, bIndex) => {
                   return (
-                    <>
-                      <tr>
+                    <React.Fragment key={curriculum.id}>
+                      <tr key={curriculum.id} index={curriculum.id}>
                         <td
                           rowSpan={
                             curriculum.totalCombos + curriculum.totalIntakes + 1
@@ -282,29 +569,31 @@ const Table = () => {
                       </tr>
                       {curriculum.combos.map((combo, cIndex) => {
                         return (
-                          <>
-                            <tr>
+                          <React.Fragment key={combo.id}>
+                            <tr key={combo.id} index={combo.id}>
                               <td rowSpan={combo.totalIntakes + 1}>
                                 {combo.name}
                               </td>
                             </tr>
                             {combo.intakes.map((intake, dIndex) => {
                               return (
-                                <tr>
+                                <tr key={intake.id} index={intake.id}>
                                   <td>{intake.name}</td>
                                   {intake.data.map((cellData, eIndex) => {
-                                    return <td>{cellData}</td>;
+                                    return (
+                                      <td key={cellData.id}>{cellData.name}</td>
+                                    );
                                   })}
                                 </tr>
                               );
                             })}
-                          </>
+                          </React.Fragment>
                         );
                       })}
-                    </>
+                    </React.Fragment>
                   );
                 })}
-              </>
+              </React.Fragment>
             );
           })}
         </tbody>
@@ -312,7 +601,7 @@ const Table = () => {
 
       {/* // static table */}
       <table
-        class="w-full table-auto border"
+        className="w-full table-auto border"
         style={{ display: "none" }}
         cellPadding="2"
       >
